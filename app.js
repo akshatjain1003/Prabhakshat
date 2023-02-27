@@ -1,17 +1,18 @@
+require('dotenv').config();
 const express = require("express");
 const path = require("path");
 // const fs= require("fs"); 
 const app = express();
+const PORT = process.env.PORT || 80;
 
 const mongoose = require('mongoose');
 const bodyparser= require('body-parser');
 main().catch(err => console.log(err));
 async function main() {
-  mongoose.set('strictQuery', true);
-  await mongoose.connect('mongodb://127.0.0.1:27017/contactDance');
+  mongoose.set('strictQuery', false);
+  const conn=await mongoose.connect(process.env.MONGO_URI);
+  console.log(`MongoDB is connected: ${conn.connection.host}`);
 }
-
-const port = 80;
 
 //define schemas
 
@@ -59,6 +60,6 @@ app.post('/contact', (req, res) => {
 });
 
 
-app.listen(port, () => {
-  console.log(`The port is started successfully on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`The port is started successfully on port ${PORT}`);
 });
