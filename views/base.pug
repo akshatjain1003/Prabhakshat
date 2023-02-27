@@ -1,0 +1,22 @@
+//- base.pug
+doctype html
+html
+  head
+    title Prabhakshat Dance Academy 
+    block scripts
+    block style
+  body
+    nav#navbar
+        ul 
+            div#logo
+                  img(src="/static/img/logo.png")
+            
+            li #[a(href="/") Home ]
+            li #[a(href="/") About] 
+            li #[a(href="/") Services ]
+            li #[a(href="/") Class Info ]
+            li #[a(href="/contact") Contact Us ]
+        div#text PDA
+    block content
+    footer#footer 
+        | Copyright © PrabhakshatDanceAcademy.com | All rights are reserved

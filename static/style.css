@@ -1,0 +1,196 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+#navbar {
+    background-color: black;
+    padding: 6px 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+#navbar li {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    align-items: center;
+    list-style: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    margin: 0px 20px;
+    color: antiquewhite;
+    font-size: 20px;
+    padding-top: 16px;
+    padding-left: 12px;
+}
+
+#navbar li a:hover {
+    color: black;
+    font-weight: bold;
+    border: 2px solid blanchedalmond;
+    border-radius: 20px;
+    padding: 2px;
+    background-color:antiquewhite;
+
+}
+
+#introSection {
+    padding-bottom: 115px;
+    color: #fff4f4;
+    text-shadow: 2px 2px darkred;
+    font-size: 31px;
+    font-weight: bold;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: red; */
+    background: center/cover no-repeat url("/static/bg.jpg");
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+    margin: 0 12px;
+    justify-content: baseline;
+
+}
+
+#logo img {
+    height: 40px;
+    filter: invert(1);
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+    padding-left: 15px;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+#introSection div.small {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 7px;
+}
+
+
+#activitySection {
+    height: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    padding: 4px;
+    margin: 25px 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 314px;
+    height: 182px;
+    font-family: cursive;
+    background-color: #993b75;
+    color: antiquewhite;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+/* .card-img{
+    height: 100px;
+    
+} */
+
+.card-box p{
+    text-align: justify;
+    padding-right: 8px;
+}
+.card-img-1 img{
+    
+    height: 116px;
+    padding: 10px 9px;
+    filter: invert(1);
+}
+.card-img-2 img{
+    height: 112px;
+    padding: 13px;
+    filter: invert(1);
+}
+.card-img-3 img{
+    height: 116px;
+    padding: 7px 10px;
+    filter: invert(1);
+}
+
+h2 {
+    padding-top: 12px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2.sp {
+    padding-top: 12px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #343433;
+    color: antiquewhite;
+}
+
+#sponsorSection {
+    height: 230px;
+    background-color: #343433;
+    display: flex;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#sponsors{
+    height: 208px;
+    max-width: 1000px;
+    margin: auto;
+}
+.spImage{
+    height: 75%;
+    margin: 15px;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    height: 58px;
+    background-color: black;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

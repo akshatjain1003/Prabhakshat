@@ -1,0 +1,64 @@
+doctype html 
+html
+  head
+    title Prabhakshat Dance Academy  
+    style 
+        include ../static/style.css 
+
+  body
+      nav#navbar
+        ul 
+            div#logo
+                  img(src="/static/img/logo.png")
+            
+            li #[a(href="/") Home ]
+            li #[a(href="/") About] 
+            li #[a(href="/") Services ]
+            li #[a(href="/") Class Info ]
+            li #[a(href="/") Contact Us ]
+        div#text PDA
+
+      section#introSection 
+        div  Welcome To Prabhakshat Dance Academy
+        div.small  Let's Show Some Love Moves! 
+        
+      h2 Our Activities
+      section#activitySection 
+        div.card
+          h3  Salsa 
+           div.card-box
+                div.card-img-1
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p Originally originating in Cuba and Puerto Rico, salsa dancing has a history of being cultivated into its own style within the Latino community. 
+        div.card
+           h3 Free Style 
+            div.card-box
+                div.card-img-2
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p Freestyle dance is an incredibly popular form of dance that goes beyond choreographed sets and allows dancers to channel their inner creativity to create their own moves.
+        div.card
+           h3 Hip Hop
+            div.card-box
+                div.card-img-3 
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p Hip-hop dance is a vibrant form of dance that combines a variety of freestyle movements to create a cultural piece of art.Some classic hip hop dance moves include the running man, the humpty dance, and the cabbage patch.
+
+
+      h2.sp Our Sponsors
+      section#sponsorSection 
+        
+        div#sponsors
+            img(src="/static/img/logo1.png", alt="SpImage",class="spImage")
+            img(src="/static/img/logo2.png", alt="SpImage",class="spImage")
+            img(src="/static/img/logo3.png", alt="SpImage",class="spImage")
+            img(src="/static/img/logo4.png", alt="SpImage",class="spImage")
+        
+      footer#footer 
+        | Copyright © PrabhakshatDanceAcademy.com | All rights are reserved
+         
+
+      script 
+        include ../static/index.js 
