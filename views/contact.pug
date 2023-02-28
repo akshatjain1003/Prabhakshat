@@ -1,5 +1,4 @@
 extends base.pug
-
 block scripts 
     script(src='/static/index.js') 
 
@@ -7,6 +6,7 @@ block style
     style 
         include ../static/style.css
         include ../static/styleContact.css 
+        
 
 block content 
     div.container
@@ -17,5 +17,5 @@ block content
             input(type="email",class="myInput",name="email",placeholder="Enter Your Email Id Please")
             input(type="phone",class="myInput",name="phoneno",placeholder="Enter Your Phone No. Please")
             input(type="text",class="myInput",name="category",placeholder="Enter Your Dance Category Please")
-            button(class="btn")
+            button(class="btn" onclick="myFunction()")
                 | Submit

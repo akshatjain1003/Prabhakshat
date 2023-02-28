@@ -1,4 +1,6 @@
 require('dotenv').config();
+// const flash=require("flash");
+
 const express = require("express");
 const path = require("path");
 // const fs= require("fs"); 
@@ -7,6 +9,7 @@ const PORT = process.env.PORT || 80;
 
 const mongoose = require('mongoose');
 const bodyparser= require('body-parser');
+const { request } = require('http');
 main().catch(err => console.log(err));
 async function main() {
   mongoose.set('strictQuery', false);
@@ -41,19 +44,20 @@ app.get('/', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-  const params = {};
-  res.status(200).render('contact.pug', params);
+  
+  res.status(200).render('contact.pug');
 });
 
 app.post('/contact', (req, res) => {
   var myData= new Contact(req.body);
   myData.save().then(()=>{
- 
-     res.send("Your contact details has been saved succesfully");
-
-  }).catch(()=>{
     
-    res.status(400).send("Sorry ! items has not been sent");
+    res.status(200).render('contact.pug');
+    console.log("Thankyou For Contact Us")
+    
+     }).catch(()=>{
+    
+    res.status(400);
 
   });
 
